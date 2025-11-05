@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Gimnasio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-xl fixed-top bg-dark" data-bs-theme="dark">
+      <div class="container-fluid px-3 px-lg-5 px-xxl-5">
+        <a class="navbar-brand d-flex align-items-center ps-4" href="#">
+          <img
+            src="img/Crown Gimnasio.svg"
+            alt="Crown Gimnasio"
+            height="80"
+            class="me-2"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#planes">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<main id="main">
+<section id="hero" class="d-flex align-items-center justify-content-center text-center min-vh-100">
+  <div class="container">
+    <h1 class="display-4 fw-bold text-white mb-3">Entrena con estilo</h1>
+    <p class="lead mb-4 text-white-50">Crown Gimnasio: lujo, enfoque y resultados reales.</p>
+    <div class="d-flex gap-2 justify-content-center">
+      <a href="#planes" class="btn btn-warning btn-lg fw-semibold">Ver planes</a>
+     
+    </div>
+  </div>
+</section>
+
+<section id="planes" class="py-5 bg-dark text-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Nuestros planes</h2>
+      <p class="text-white-50 mb-0">Elige el que mejor se adapte a tus objetivos</p>
+    </div>
+
+    <!-- AQUI irá el grid de cartas -->
+    <div class="row g-4" id="pricingGrid">
+ <!-- 🥉 Plan Básico -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 shadow-sm border-0 pricing-card text-center">
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title mb-3 fw-bold text-warning">Básico</h5>
+            <div class="mb-3">
+              <span class="fs-1 fw-bold text-warning">$19</span>
+              <span class="text-white-50">/ mes</span>
+            </div>
+            <p class="text-white-50 mb-3">Acceso al gimnasio en horario regular.</p>
+            <ul class="list-unstyled small mb-4">
+              <li>✔ Acceso a máquinas</li>
+              <li>✔ Lockers compartidos</li>
+              <li>✖ Clases grupales</li>
+            </ul>
+            <a href="#contacto" class="btn btn-warning fw-semibold w-75">Elegir plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🥈 Plan Popular -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 shadow-lg border-0 pricing-card featured text-center">
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title mb-3 fw-bold text-warning">Popular</h5>
+            <div class="mb-3">
+              <span class="fs-1 fw-bold text-warning">$35</span>
+              <span class="text-white-50">/ mes</span>
+            </div>
+            <p class="text-white-50 mb-3">Clases grupales + acceso extendido.</p>
+            <ul class="list-unstyled small mb-4">
+              <li>✔ Todo del plan Básico</li>
+              <li>✔ Clases grupales ilimitadas</li>
+              <li>✔ Evaluación física mensual</li>
+            </ul>
+            <a href="#contacto" class="btn btn-warning fw-semibold w-75">Elegir plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🥇 Plan Premium -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 shadow-sm border-0 pricing-card text-center">
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title mb-3 fw-bold text-warning">Premium</h5>
+            <div class="mb-3">
+              <span class="fs-1 fw-bold text-warning">$55</span>
+              <span class="text-white-50">/ mes</span>
+            </div>
+            <p class="text-white-50 mb-3">Entrenador personal y zonas VIP.</p>
+            <ul class="list-unstyled small mb-4">
+              <li>✔ Todo del plan Popular</li>
+              <li>✔ 4 sesiones con entrenador/mes</li>
+              <li>✔ Acceso al sauna y zona de recuperación</li>
+            </ul>
+            <a href="#contacto" class="btn btn-warning fw-semibold w-75">Elegir plan</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="py-5 bg-dark text-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-warning">Servicios & Áreas</h2>
+      <p class="text-white-50 mb-0">Todo lo que necesitas para cumplir tus metas</p>
+    </div>
+
+    <!-- Grid responsive: 1 col móvil, 2 en md, 3 en lg+ -->
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+      <!-- Zumba -->
+      <div class="col">
+        <a class="service-tile d-block rounded-4 overflow-hidden position-relative" 
+           href="#contacto" aria-label="Zumba"
+           style="--bg:url('img/servicios/zumba.jpg')">
+          <span class="service-badge">Clases</span>
+          <div class="service-caption">
+            <h3 class="h5 fw-bold m-0">Zumba</h3>
+            <small class="text-white-50">Cardio divertido con ritmo latino</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- Musculación / Pesas -->
+      <div class="col">
+        <a class="service-tile d-block rounded-4 overflow-hidden position-relative" 
+           href="#contacto" aria-label="Musculación"
+           style="--bg:url('img/servicios/pesas.jpg')">
+          <span class="service-badge">Fuerza</span>
+          <div class="service-caption">
+            <h3 class="h5 fw-bold m-0 text-white">Musculación</h3>
+            <small class="text-white-50">Área completa de máquinas y racks</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- Spinning -->
+      <div class="col">
+        <a class="service-tile d-block rounded-4 overflow-hidden position-relative" 
+           href="#contacto" aria-label="Spinning"
+           style="--bg:url('img/servicios/spinning.jpg')">
+          <span class="service-badge">Cardio</span>
+          <div class="service-caption">
+            <h3 class="h5 fw-bold m-0 text-white">Spinning</h3>
+            <small class="text-white-50">Potencia y resistencia en grupo</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- Cross Training -->
+      <div class="col">
+        <a class="service-tile d-block rounded-4 overflow-hidden position-relative" 
+           href="#contacto" aria-label="Cross Training"
+           style="--bg:url('img/servicios/cross.jpg')">
+          <span class="service-badge">HIIT</span>
+          <div class="service-caption">
+            <h3 class="h5 fw-bold m-0 text-white">Cross Training</h3>
+            <small class="text-white-50">WODs, barras y funcional</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- Yoga / Pilates -->
+      <div class="col">
+        <a class="service-tile d-block rounded-4 overflow-hidden position-relative" 
+           href="#contacto" aria-label="Yoga y Pilates"
+           style="--bg:url('img/servicios/yoga.jpg')">
+          <span class="service-badge">Mind & Body</span>
+          <div class="service-caption">
+            <h3 class="h5 fw-bold m-0">Yoga & Pilates</h3>
+            <small class="text-white-50">Movilidad, core y balance</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- Sauna & Recovery -->
+      <div class="col">
+        <a class="service-tile d-block rounded-4 overflow-hidden position-relative" 
+           href="#contacto" aria-label="Sauna y Recuperación"
+           style="--bg:url('img/servicios/sauna.jpg')">
+          <span class="service-badge">Wellness</span>
+          <div class="service-caption">
+            <h3 class="h5 fw-bold m-0">Sauna & Recovery</h3>
+            <small class="text-white-50">Recuperación y bienestar</small>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+    
+  </body>
+</html>
